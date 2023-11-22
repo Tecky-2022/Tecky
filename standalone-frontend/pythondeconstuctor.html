@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Python Deconstructor</h1>
+    <p>A destructor is called when an object is deleted or destroyed. Destructor is used to perform the clean-up activity before destroying the object, such as closing database connections or filehandle.
+
+        Python has a garbage collector that handles memory management automatically. For example, it cleans up the memory when an object goes out of scope.</p>
+        <p>The destructor is the reverse of the constructor. The constructor is used to initialize objects, while the destructor is used to delete or destroy the object that releases the resource occupied by the object.
+
+            In Python, destructor is not called manually but completely automatic. destructor gets called in the following two cases
+            
+           <br>1. When an object goes out of scope or
+           <br>2.The reference counter of the object reaches 0.
+            </p>
+            <p>def __del__(self):</p>
+            <p>Where,
+
+                <br>def: The keyword is used to define a method.
+                <br> __del__() Method: It is a reserved method. This method gets called as soon as all references to the object have been deleted
+                <br>self: The first argument self refers to the current object.</p>
+
+</div>
+                <div class="container">
+                    <div class="chatbox">
+                        <div class="chatbox__support">
+                            <div class="chatbox__header">
+                                <div class="chatbox__image--header">
+                                    <img src="robotpng.png" style="height:40px ; width:40px" alt="image">
+                                </div>
+                                <div class="chatbox__content--header">
+                                    <h4 class="chatbox__heading--header">Ask Tecky!</h4>
+                                    <p class="chatbox__description--header">Hi. My name is Tecky. How can I help you?</p>
+                                </div>
+                            </div>
+                            <div class="chatbox__messages">
+                                <div></div>
+                            </div>
+                            <div class="chatbox__footer">
+                                <input type="text"  placeholder="Ask me...">
+                                <button class="chatbox__send--footer send__button"><img src="paper-plane-png-clip-art-image-gallery-yopriceville-23.png" style="height: 30px;width: 45px;"></button>
+                            </div>
+                        </div>
+                        <div class="chatbox__button">
+                            <button><img src="laughing_robot.gif" style="height: 70px;width: 115px;"></button>
+                        </div>
+                    </div>
+                </div>
+                
+                    <script src="./app.js"></script>
+            
+</body>
+</html>

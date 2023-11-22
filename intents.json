@@ -1,0 +1,110 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Namaste"
+      ],
+      "responses": [
+        "Hey :)",
+        "Hello, how may I assist you",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "pleasantries",
+      "patterns": [
+        "How are you",
+        "Wassup"
+      ],
+      "responses": [
+       "I'm fine.\n How may I assist you ?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", 
+        "See you later",
+        "Goodbye"
+        ],
+      "responses": [
+        "See you later geek, thanks for visiting",
+        "Have a nice day champ",
+        "Bye! Come back again soon.",
+        "print(\"Bye bye\")"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "What things can you do for me ?",
+        "How can you help me ?",
+        "What are your powers ?",
+        "Who are you",
+        "Introduce yourself"
+      ],
+      "responses": [
+        "I am Tecky , your smart virtual friend .\n I can help you with your coding doubts and find useful resources for you.\n\nI can also tell you jokes when you are bored. ;) "
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "I went to a street where the houses were numbered 8k, 16k, 32k, 64k, 128k, 256k and 512k.It was a trip down Memory Lane.",
+        " \"Debugging\" is like being the detective in a crime drama where you are also the murderer.",
+        "!false \n (Its funny because its true.)",
+        "Why do programmers always mix up Christmas and Halloween?\nBecause Dec 25 is Oct 31.",
+        "Why do Java programmers have to wear glasses?\nBecause they dont C#."
+
+
+      ]
+    },
+    {
+      "tag": "constructor",
+      "patterns": [
+        "What are constructor?",
+        "Define constructor",
+        "I am having trouble with constructor"
+      ],
+      "responses": [
+        "Constructors are generally used for instantiating an object. The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created. In Python the __init__() method is called the constructor and is always called when an object is created.."
+      ]
+    },
+    {
+      "tag": "constructorsyntax",
+      "patterns": [
+        
+        "Syntax of constructor"
+      ],
+      "responses": [
+        "def __init__(self):\n# body of the constructor"
+      ]
+    },
+    {
+      "tag": "constructorexample",
+      "patterns": [
+        "What is the example of default constructor"
+      ],
+      "responses": [
+        "class GeekforGeeks:\n # default constructor\n def __init__(self):\nself.geek = \"hello\"\n# a method for printing data members\n def print_Geek(self):\nprint(self.geek)\n# creating object of the class\nobj = GeekforGeeks()\n # calling the instance method using the object obj\n obj.print_Geek() "
+      ]
+    }
+  ]
+}

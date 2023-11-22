@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Python Constructor</h1>
+        <p>A constructor is a special type of method (function) which is used to initialize the instance members of the class.
+    
+            In C++ or Java, the constructor has the same name as its class, but it treats constructor differently in Python. It is used to create an object.
+            
+            Constructors can be of two types.
+            <br>1.Parameterized Constructor
+           <br>2. Non-parameterized Constructor<br>
+            Constructor definition is executed when we create the object of this class. Constructors also verify that there are enough resources for the object to perform any start-up task.</p>
+            <h1>Creating the constructor in python</h1>
+                <p>In Python, the method the __init__() simulates the constructor of the class. This method is called when the class is instantiated. It accepts the self-keyword as a first argument which allows accessing the attributes or method of the class.
+                
+               <br> We can pass any number of arguments at the time of creating the class object, depending upon the __init__() definition. It is mostly used to initialize the class attributes. Every class must have a constructor, even if it simply relies on the default constructor.
+                </p>
+        </div>
+        
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="robotpng.png" style="height:40px ; width:40px" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Ask Tecky!</h4>
+                        <p class="chatbox__description--header">Hi. My name is Tecky. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text"  placeholder="Ask me...">
+                    <button class="chatbox__send--footer send__button"><img src="paper-plane-png-clip-art-image-gallery-yopriceville-23.png" style="height: 30px;width: 45px;"></button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="laughing_robot.gif" style="height: 70px;width: 115px;"></button>
+            </div>
+        </div>
+    </div>
+    
+        <script src="./app.js"></script>
+</body>
+</html>
