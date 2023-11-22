@@ -12,23 +12,24 @@
         <div class="chatbox__support">
             <div class="chatbox__header">
                 <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    <img src="/static/images/robotpng.png" style="height:40px ; width:40px" alt="image">
                 </div>
                 <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                    <h4 class="chatbox__heading--header">Ask Tecky!</h4>
+                    <p class="chatbox__description--header">Hi. My name is Tecky. How can I help you??</p>
                 </div>
             </div>
             <div class="chatbox__messages">
                 <div></div>
             </div>
             <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
+                <input type="text"  placeholder="Ask me..." id="speechtotext">
+                <button class="chatbox__send--footer send__button"><img src="/static/images/paper-plane-png-clip-art-image-gallery-yopriceville-23.png" style="height: 30px;width: 45px;"></button>
+                <button class="chatbox__send--footer voice__button" ><img src="/static/images/final_mic.png" style="height: 30px;width: 30px;"></button>
             </div>
         </div>
         <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            <button><img src="/static/images/laughing_robot.gif "style="height: 70px;width: 115px;" /></button>
         </div>
     </div>
 </div>

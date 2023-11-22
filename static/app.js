@@ -1,9 +1,11 @@
+let flag=0;
 class Chatbox {
     constructor() {
         this.args = {
             openButton: document.querySelector('.chatbox__button'),
             chatBox: document.querySelector('.chatbox__support'),
-            sendButton: document.querySelector('.send__button')
+            sendButton: document.querySelector('.send__button'),
+            voiceButton: document.querySelector('.voice__button')
         }
 
         this.state = false;
@@ -11,18 +13,35 @@ class Chatbox {
     }
 
     display() {
-        const {openButton, chatBox, sendButton} = this.args;
+        const {openButton, chatBox, sendButton, voiceButton} = this.args;
 
         openButton.addEventListener('click', () => this.toggleState(chatBox))
 
         sendButton.addEventListener('click', () => this.onSendButton(chatBox))
 
+        voiceButton.addEventListener('click', () => this.voice(chatBox))
+
         const node = chatBox.querySelector('input');
         node.addEventListener("keyup", ({key}) => {
             if (key === "Enter") {
                 this.onSendButton(chatBox)
+                var audio=new Audio('ding.mp3');
+                audio.play();
             }
         })
+    }
+
+
+    voice(chatbox){
+        var rec=new webkitSpeechRecognition();
+        rec.lang="en-IN";
+        rec.start();
+        rec.onresult=function(event)  {
+            console.log(event);
+            document.getElementById("speechtotext").value=event.results[0][0].transcript;
+            this.onSendButton(chatbox);
+        }
+       
     }
 
     toggleState(chatbox) {
